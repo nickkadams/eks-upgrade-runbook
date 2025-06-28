@@ -65,13 +65,13 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 18.0"
 
-  cluster_name    = var.cluster-name
-  cluster_version = var.var.cluster_version
+  cluster_name    = local.name
+  cluster_version = var.cluster_version
   # ...
 
   # prefix_separator                   = ""
-  # iam_role_name                      = var.cluster-name
-  # cluster_security_group_name        = var.cluster-name
+  # iam_role_name                      = local.name
+  # cluster_security_group_name        = local.name
   # cluster_security_group_description = "EKS cluster security group."
 
   # ...  
@@ -94,14 +94,14 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 18.0"
 
-  cluster_name    = var.cluster-name
-  cluster_version = var.var.cluster_version
+  cluster_name    = local.name
+  cluster_version = var.cluster_version
   # ...
 
   # Uncomment below
   prefix_separator                   = ""
-  iam_role_name                      = var.cluster-name
-  cluster_security_group_name        = var.cluster-name
+  iam_role_name                      = local.name
+  cluster_security_group_name        = local.name
   cluster_security_group_description = "EKS cluster security group."
 
   # ...  
