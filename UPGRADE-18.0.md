@@ -18,7 +18,7 @@
 ```shell
 ~ velero backup describe cluster1-20250628 --details
 ~ velero backup logs cluster1-20250628
-~ aws s3 ls s3://velero-backups-stg/backups/cluster1-20250628/
+~ aws s3 ls s3://velero-backups-012345678901/backups/cluster1-20250628/
 # If required, create one
 ~ velero backup create cluster1-20250628 --include-namespaces '*' --snapshot-volumes --ttl 168h0m0s
 ```
