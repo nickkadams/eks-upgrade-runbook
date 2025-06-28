@@ -28,7 +28,7 @@ public.ecr.aws/karpenter/controller:1.5.0@sha256:339aef3f5ecdf6f94d1c7cc9d0e1d35
 3. Update `variables.tf`
 
 ```hcl
-variable "kubernetes-version" {
+variable "cluster_version" {
   type        = string
   default     = "1.33"
   # ...

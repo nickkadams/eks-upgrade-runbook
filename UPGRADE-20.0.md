@@ -33,7 +33,7 @@ module "eks" {
   version = "~> 20.0"
 
   cluster_name    = var.cluster-name
-  cluster_version = var.kubernetes-version
+  cluster_version = var.var.cluster_version
   # ...
   
   authentication_mode = "API"

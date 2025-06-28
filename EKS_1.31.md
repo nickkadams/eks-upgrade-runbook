@@ -16,7 +16,7 @@
 2. Update `variables.tf`
 
 ```hcl
-variable "kubernetes-version" {
+variable "cluster_version" {
   type        = string
   default     = "1.31"
   # ...

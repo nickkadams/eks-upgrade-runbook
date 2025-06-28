@@ -66,7 +66,7 @@ module "eks" {
   version = "~> 18.0"
 
   cluster_name    = var.cluster-name
-  cluster_version = var.kubernetes-version
+  cluster_version = var.var.cluster_version
   # ...
 
   # prefix_separator                   = ""
@@ -95,7 +95,7 @@ module "eks" {
   version = "~> 18.0"
 
   cluster_name    = var.cluster-name
-  cluster_version = var.kubernetes-version
+  cluster_version = var.var.cluster_version
   # ...
 
   # Uncomment below
