@@ -32,6 +32,22 @@ module "eks" {
 
   enable_cluster_creator_admin_permissions = var.enable_cluster_creator_admin_permissions
 
+  access_entries = {
+    role1 = {
+      kubernetes_groups = []
+      principal_arn     = "arn:${data.aws_partition.current.partition}:iam::${var.aws_account_id}:role/${var.aws_assume_role}"
+
+      policy_associations = {
+        root = {
+          policy_arn = "arn:${data.aws_partition.current.partition}:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
+          access_scope = {
+            type = "cluster"
+          }
+        }
+      }
+    }
+  }
+
   cluster_addons = {
     vpc-cni = {
       most_recent              = true

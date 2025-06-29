@@ -26,7 +26,7 @@ module "eks" {
       rolearn  = "arn:${data.aws_partition.current.partition}:iam::${var.aws_account_id}:role/${var.aws_assume_role}"
       username = "org-admin"
       groups   = ["system:masters"]
-    },
+    }
   ]
 
   map_users = [
@@ -34,7 +34,7 @@ module "eks" {
       userarn  = "arn:${data.aws_partition.current.partition}:iam::${var.aws_account_id}:user/user1"
       username = "user1"
       groups   = ["system:masters"]
-    },
+    }
   ]
 
   node_groups_defaults = {

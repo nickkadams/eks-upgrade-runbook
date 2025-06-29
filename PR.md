@@ -25,10 +25,10 @@
 ~ rm -f *.md
 ```
 
-4. Rename `eks-to-v20.tf` to `eks.tf`
+4. Rename `eks-to-v20.tf` to `eks-on-v17.tf`
 
 ```shell
-~ mv eks-to-v20.tf eks.tf
+~ mv eks-to-v20.tf eks-on-v17.tf
 ```
 
 5. Confirm `terraform plan` matches state

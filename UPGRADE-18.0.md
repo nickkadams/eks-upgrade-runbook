@@ -40,10 +40,10 @@
 
 5. If required, update the AWS Console EKS Cluster > Access > Manage access  to **EKS API and ConfigMap**. Confirm Status is Successful under Update history.
 6. Run `terraform plan` with the module version [v17.24.0](https://github.com/terraform-aws-modules/terraform-aws-eks/releases/tag/v17.24.0)
-7. Rename `eks.tf` to `eks.tf.orig`
+7. Rename `eks-on-v17.tf` to `eks-on-v17.tf.orig`
 
 ```shell
-~ mv eks.tf eks.tf.orig
+~ mv eks-on-v17.tf eks-on-v17.tf.orig
 ```
 
 8. Rename `aws-auth.tf` to `aws-auth.tf.orig`
