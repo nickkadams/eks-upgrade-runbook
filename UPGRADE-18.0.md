@@ -171,5 +171,4 @@ Apply complete! Resources: 5 added, 1 changed, 9 destroyed.
 - Features
   - Authentication mode - EKS API and ConfigMap
 
-- Source
-  - [clowdhaus](https://github.com/clowdhaus/eks-v17-v18-migrate)
+- Source [clowdhaus](https://github.com/clowdhaus/eks-v17-v18-migrate)
