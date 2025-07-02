@@ -73,3 +73,5 @@ Apply complete! Resources: 14 added, 5 changed, 8 destroyed.
 - Features
   - Envelope encryption
   - IAM access entry for Karpenter
+
+## Next [Upgrade to v20.x](UPGRADE-20.0.md)

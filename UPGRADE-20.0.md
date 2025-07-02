@@ -71,3 +71,5 @@ Apply complete! Resources: 21 added, 3 changed, 1 destroyed.
 - Features
   - Authentication mode - EKS API
   - IAM access entries
+
+## Next [Upgrade to Cluster version 1.31](EKS_1.31.md)

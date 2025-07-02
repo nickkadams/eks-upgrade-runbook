@@ -37,3 +37,5 @@
 ~ terraform plan
 No changes. Your infrastructure matches the configuration.
 ```
+
+## Next [Update node-groups](README.md#final-aws-upgrade-steps)

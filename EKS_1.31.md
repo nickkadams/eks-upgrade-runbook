@@ -36,3 +36,5 @@ Modifications complete after 6m42s
 
 - Features
   - Kubernetes version 1.31
+
+## Next [Upgrade to Cluster version 1.32](EKS_1.32.md)
