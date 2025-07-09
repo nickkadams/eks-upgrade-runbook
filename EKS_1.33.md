@@ -1,4 +1,4 @@
-# Upgrade from EKS 1.31 to 1.32
+# Upgrade from EKS 1.32 to 1.33
 
 ## Steps
 
