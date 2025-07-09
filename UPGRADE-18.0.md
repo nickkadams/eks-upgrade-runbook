@@ -132,7 +132,7 @@ Plan: 21 to add, 4 to change, 16 to destroy.
 ~ terraform apply -target 'module.eks.aws_eks_cluster.this[0]' -refresh-only
 ```
 
-16. **WARNING:** confirm you backed up the `aws-auth` ConfigMap in step 5and that your `aws_auth_roles` block is accurate.
+16. **WARNING:** confirm you backed up the `aws-auth` ConfigMap in step 5 and that your `aws_auth_roles` block is accurate.
 
 ```shell
 ~ terraform apply -target 'module.eks.kubernetes_config_map.aws_auth[0]'
